@@ -49,12 +49,12 @@ b{ color: hsl(217, 19%, 35%); }
 
 h1{ letter-spacing: 2px; }
 
-a{ background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%)); }
+a{ background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(217, 19%, 35%); }
 
 a, a:hover, .icon-svg, #icon-share{ cursor: pointer; }
 
 footer img:hover, a:hover{
-    background: linear-gradient(to right, gold, hsl(0, 0%, 100%));
+    background: linear-gradient(to right, gold, hsl(7, 86%, 67%));
     transition: 1s;
 }
 
