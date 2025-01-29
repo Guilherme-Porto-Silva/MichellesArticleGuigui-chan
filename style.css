@@ -13,7 +13,7 @@ body{
 
 section, section > img{
     width: 100%;
-    background-color: hsl(210, 46%, 95%);
+    background-color: #ffffff;
 }
 
 body, section, main, footer, .awaysColumn, .around{
