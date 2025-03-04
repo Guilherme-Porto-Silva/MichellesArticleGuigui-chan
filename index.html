@@ -1,92 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-      
-        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-        
-        <title>Frontend Mentor | Article preview component</title>
-      
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="./style.css">
-      
-      </head>
-<body>
-
-    <section>
-
-        <img src="./images/drawers.jpg" alt="drawers image" loading="lazy">
-
-        <div class="awaysColumn">
-
-            <main class="around">
-
-                <b>
-                    Shift the overall look and feel by adding these wonderful 
-                    touches to furniture in your home
-                  </b>
-            
-                  <p>
-                    Ever been in a room and felt like something was missing? Perhaps 
-                    it felt slightly bare and uninviting. I’ve got some simple tips 
-                    to help you make any room feel complete.
-                  </p>
-
-            </main>
-
-            <footer>
-
-                <div class="around" aria-live="polite">
-
-                    <img src="./images/avatar-michelle.jpg" alt="Michelle’s avatar" loading="lazy">
-                
-                    <span class="awaysColumn"><!-- afraid JavaScript could collect this one for the state const -->
-
-                        <b> Michelle Appleton </b>
-                  
-                        <p> 28 Jun 2020 </p>
-                  
-                        </span>
-                </div>
-
-                <div class="around hidden">
-
-                    <h1> SHARE </h1>
-        
-                    <img src="./images/icon-facebook.svg" alt="facebook icon" loading="lazy" tabindex="0" class="icon-svg">
-        
-                    <img src="./images/icon-twitter.svg" alt="twitter icon" loading="lazy" tabindex="0" class="icon-svg">
-        
-                    <img src="./images/icon-pinterest.svg" alt="pinterest icon" loading="lazy" tabindex="0" class="icon-svg">
-        
-                  </div>
-
-                  <img src="./images/icon-share.svg" loading="lazy" alt="share icon" id="icon-share" aria-label="Click to share this article" role="button" tabindex="0">
-
-            </footer>
-
-        </div>
-
-    </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-    <script src="./engine.js"></script>
-      
-      <div class="attribution awaysColumn">
-    
-        <h3>
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        </h3> 
-    
-        <h3>
-          Coded by <a href="https://github.com/Guilherme-Porto-Silva">Guigui-chan</a>.
-        </h3>
-        
-      </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Young+Serif&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Article preview component</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body class="column">
+
+  <section>
+
+    <img src="./images/drawers.jpg" alt="">
+
+    <main class="column">
+
+       <h1>
+            Shift the overall look and feel by adding these wonderful 
+            touches to furniture in your home
+       </h1>
+       
+        <p>
+           Ever been in a room and felt like something was missing? Perhaps 
+           it felt slightly bare and uninviting. I’ve got some simple tips 
+           to help you make any room feel complete.
+        </p>
+
+  <footer class="active">
+
+        <div class="row">
+
+              <img src="./images/avatar-michelle.jpg" alt="" id="avatar-michelle">
+
+              <div class="column">
+
+                   <h1> Michelle Appleton </h1>
+
+                   <p> 28 Jun 2020 </p>
+
+              </div>
+
+         </div>
+
+            <img src="./images/icon-share.svg" alt="" class="icon-share">
+
+  </footer>
+
+  <footer style="background-color: hsl(217, 19%, 35%);">
+
+        <div class="row">
+
+          <span id="share"> Share </span>
+
+              <img src="./images/icon-facebook.svg" alt="" class="icon-svg">
+
+              <img src="./images/icon-twitter.svg" alt="" class="icon-svg">
+
+              <img src="./images/icon-pinterest.svg" alt="" class="icon-svg">
+
+         </div>
+
+            <img src="./images/icon-share.svg" alt="" class="icon-share">
+
+  </footer>
+
+</main>
+
+</section>
+  
+  <div class="attribution column">
+
+   <h3> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. </h3>
+
+   <h3> Coded by <a href="https://github.com/Guilherme-Porto-Silva/">Guigui-chan</a>. </h3>
+
+  </div>
+
+  <script src="./engine.js"></script>
 
 </body>
 </html>
