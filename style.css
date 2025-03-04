@@ -2,86 +2,78 @@
     margin: 0;
     padding: 0;
     color: hsl(214, 17%, 51%);
-    font-size: large;
-    font-family: "Manrope";
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 body{
-    height: 100vh;
-    background-color: aliceblue;
+    padding: 20px;
+    background-color: hsl(212, 23%, 69%);
 }
 
-section, section > img{
-    width: 100%;
-    background-color: #ffffff;
-}
+footer{ display: none; }
 
-body, section, main, footer, .awaysColumn, .around{
+section, footer.active, .row, .column{
     display: flex;
-    align-items: center;
-}
-
-body, section, main, .awaysColumn{
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
-footer{
-    justify-content: space-between;
-    img{
-        width: 20%;
-        height: 20%;
-        border-radius: 5cm;
-    }
+section, .column{ flex-direction: column; }
+
+.column{ gap: 10px; }
+
+section, img{
+    width: 100%;
+    border-radius: 10mm;
+    background-color: hsl(210, 46%, 95%);
+    font-size: 81.25%;
 }
 
-.around{ justify-content: space-around; }
+main{ padding: 50px; }
 
-main, footer{ padding: 2%; }
-
-p{
+footer.active{
     width: 90%;
-    margin: 5%;
-    opacity: 0.7;
+    justify-content: space-between;
+    padding: 0.5rem;
 }
 
-b{ color: hsl(217, 19%, 35%); }
+footer img{ width: 20%; }
 
-h1{ letter-spacing: 2px; }
+h1{
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+}
 
-a{ background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(217, 19%, 35%); }
+p{ opacity: 0.8; }
 
-a, a:hover, .icon-svg, #icon-share{ cursor: pointer; }
+a { color: hsl(228, 45%, 44%); }
 
-footer img:hover, a:hover{
-    background: linear-gradient(to right, gold, hsl(7, 86%, 67%));
+a:hover {
+    color: orangered;
     transition: 1s;
 }
 
-a, a:hover{
-    text-decoration: none;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+.icon-share{
+    margin: 5px;
+    padding: 0.5rem;
+    width: 10%;
+    background-color: hsl(214, 17%, 51%);
 }
 
-.grayBackground{ background-color: hsl(217, 19%, 35%); }
-
-.hidden{ display: none; }
-
-@media screen and (min-width: 900px) {
-
+@media screen and (min-width: 1440px) {
     section{
         flex-direction: row;
         width: 90%;
-        height: 60%;
+        font-size: 125%;
     }
-        
-    section > img{
-        width: 43%;
-        height: 100%;
-    }
+}
 
-    section, section > img{ border-radius: 10mm; }
+@media screen and (max-width: 500px) {
 
-     }
+    footer.active{ width: 100%; }
+    
+    .row{ gap: 10px; }
+}
