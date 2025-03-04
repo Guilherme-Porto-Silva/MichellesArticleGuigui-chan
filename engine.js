@@ -1,20 +1,24 @@
-const footerConst = document.footer;
+const SHAREspan = document.getElementById("share");
 
-const state = Array.from(footerConst.div);
+SHAREspan.textContent = SHAREspan.textContent.toUpperCase();
 
-const shareButton = document.getElementById("icon-share");
+SHAREspan.style.color = "hsl(210, 46%, 95%)";
 
-function stateToggle() {
+const footers = Array.from(document.querySelectorAll("footer"));
 
-    state.forEach(element => {
+const shareButtons = Array.from(document.getElementsByClassName("icon-share"));
 
-        element.classList.toggle('hidden');
+function toggleFooters() {
+
+    footers.forEach(footer => {
+
+        if(footer.classList.contains("active")) footer.classList.remove("active");
+
+        else footer.classList.add("active");
     });
-
-    footerConst.classList.toggle('grayBackground');
 }
 
-shareButton.addEventListener("click", stateToggle);
+shareButtons.forEach(shareButton => shareButton.addEventListener("click", toggleFooters));
 
 const svg = Array.from(document.getElementsByClassName("icon-svg"));
 
