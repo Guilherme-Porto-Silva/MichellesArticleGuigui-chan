@@ -42,7 +42,7 @@ footer.active{
 
 footer img{ width: 20%; }
 
-h1, strong{
+h1{
     color: hsl(217, 19%, 35%);
     font-weight: 700;
 }
