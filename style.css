@@ -14,25 +14,25 @@ body{
 
 footer{ display: none; }
 
-section, footer.active, .row, .column{
+main, footer.active, .row, .column{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
 
-section, .column{ flex-direction: column; }
+main, .column{ flex-direction: column; }
 
 .column{ gap: 10px; }
 
-section, img{
+main, img{
     width: 100%;
     border-radius: 10mm;
     background-color: hsl(210, 46%, 95%);
     font-size: 81.25%;
 }
 
-main{ padding: 50px; }
+section{ padding: 50px; }
 
 footer.active{
     width: 90%;
@@ -42,7 +42,7 @@ footer.active{
 
 footer img{ width: 20%; }
 
-h1{
+h1, strong{
     color: hsl(217, 19%, 35%);
     font-weight: 700;
 }
@@ -64,7 +64,7 @@ a:hover {
 }
 
 @media screen and (min-width: 1440px) {
-    section{
+    main{
         flex-direction: row;
         width: 90%;
         font-size: 125%;
